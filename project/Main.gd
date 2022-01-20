@@ -1,13 +1,7 @@
 extends Node2D
 
-
-pos = KinematicBody2D.get_position()
-
-camer
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _process(delta):
+	$Camera2D.set_position($KinematicBody2D.get_position())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
